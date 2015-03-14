@@ -1,0 +1,8 @@
+{
+  "name": "ng2-hash-slider",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.12.2"
+  }
+}

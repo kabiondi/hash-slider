@@ -1,0 +1,17 @@
+<div class="app-header">
+	<img class="center fit" src="images/header-image.png" alt="header-image">
+	<div class="wrapper center">
+
+		<form action="/slideshow" class="hashtag-input" ng-submit="submitTag()">
+			<input type="text" placeholder="Try a Hashtag" ng-model="userHashtag"></input>
+			<button type="submit" class="slideshow-btn">Run Slideshow</button>
+		</form>
+	</div>
+</div>
+
+<div>this is from the slideshow route</div>
+
+<div class="cycle-slideshow" id="slides"
+	data-cycle-fx="scrollHorz"
+	data-cycle-speed="200">
+</div>
