@@ -9,7 +9,7 @@ var app = angular.
 			})
 			.when('/slideshow', {
 				templateUrl: 'views/slideshow.html',
-				controller: 'homeCtrl'
+				controller: 'slideCtrl'
 			})
 			
 		$locationProvider.html5Mode(true);
