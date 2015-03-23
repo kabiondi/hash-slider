@@ -1,13 +1,11 @@
 (function() {
 	
 	app.controller('homeCtrl', ['$scope', 'hashFactory', function ($scope, hashFactory) {
-		var userHashtag;
-		var test;
+		var tag = hashFactory.setHashtag();
 
 		$scope.submitTag = function () {
-			userHashtag = $scope.inputHashtag;
-			test = hashFactory.setHashtag(userHashtag);
-			console.log(test);
+			tag = $scope.inputHashtag;
+			hashFactory.setHashtag(tag);
 		}
 
 	}]);

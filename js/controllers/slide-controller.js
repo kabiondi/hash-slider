@@ -2,13 +2,30 @@
 
 	app.controller('slideCtrl', ['$scope', 'hashFactory', function ($scope, hashFactory) {
 		var count = 10;
-		var count = 10;
 		var slideTime = 5000;
 		var slideshowStarted = false;
 		var slideInterval = '';
 		var tag = hashFactory.setHashtag();
 
 		$('.slideshow-target').html(tag);
+
+		$scope.submitTag = function () {
+			tag = $scope.inputHashtag;
+			hashFactory.setHashtag(tag);
+			clearSlides();
+			getPics(tag);
+		}
+
+		function clearSlides () {
+		  console.log('clearSlides runs');
+		  if ($(".cycle-slideshow").data("cycle.opts").slideCount) {
+		    while ($(".cycle-slideshow").data("cycle.opts").slideCount>0) {// slideCount changes on each pass
+		      $('.cycle-slideshow').cycle('remove', 0);
+		      clearInterval(slideInterval);
+		      slideshowStarted = false;
+		    }
+		  }
+		}
 
 		function getPics (tag) {
 			console.log('getPics runs');

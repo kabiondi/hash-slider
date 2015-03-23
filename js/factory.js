@@ -6,13 +6,9 @@
 
 		localStorage.setItem('currentHashtag',''); //initialize the local storage
 
-		var storeTag = function (tag) {
-			localStorage.setItem('currentHashtag',tag);
-		}
-
 		hashService.setHashtag = function(tag) {
 			if (tag) {
-				storeTag(tag);
+				localStorage.setItem('currentHashtag',tag);
 				return hashFromFactory;	
 			}
 			else {
