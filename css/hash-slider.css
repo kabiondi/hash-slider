@@ -18,7 +18,15 @@ html {
  display: block;
  margin: auto;
 }
-
+.slide-container {
+	position: relative;
+	height: 640px;
+	width: 640px;
+	margin: auto;
+}
+.cycle-slideshow {
+	position: absolute;
+}
 
 html, body {
 	height: 100%;
@@ -51,17 +59,7 @@ html, body {
 	color: red;
 }
 
-@media only screen and (max-width: 400px) {
-	.box {
-		width: 220px;
-		height: 220px;
-		padding-bottom: 0;
-		float: none;
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
-@media only screen and (min-width: 401px) and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
 	.box {
 		width: 50%;
 		padding-bottom: 50%;
