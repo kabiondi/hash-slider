@@ -2,6 +2,21 @@
 html {
 	background: white;
 }
+.navbar {
+	background-color: #34bbae;
+	height: 50px;
+}
+.nav-btn {
+	display: inline-block;
+	color: white;
+	background-color: #34aabb;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px 10px 5px 10px;
+	margin-left: 10px;
+}
 .app-header {
 	display: block;
 	margin-top: 15px;
@@ -49,11 +64,19 @@ html, body {
 	top: 1px;
 	bottom: 1px;
 }
-.hashtag-input {
+.hashtag-container {
+	display: inline-block;
 	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 35%;
 	padding-bottom: 7px;
 	min-width: 220px;
+}
+.hashtag-input {
+	height: 25px;
+	width: 200px;
 }
 .slideshow-btn {
 	color: red;

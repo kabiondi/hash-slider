@@ -1,11 +1,17 @@
+
+<div class="navbar">
+	<div class="nav-btn">ABOUT</div>
+	<div class="nav-btn">CONTACT</div>
+	<form action="/slideshow" class="hashtag-container" ng-submit="submitTag()">
+		<input type="text" class="hashtag-input" placeholder="Try a Hashtag" ng-model="inputHashtag"></input>
+		<button type="submit" class="slideshow-btn">Run Slideshow</button>
+	</form>
+</div>
+
 <div class="app-header">
 	<img class="center fit" src="images/header-image.png" alt="header-image">
 	<div class="wrapper center">
 
-		<form class="hashtag-input" ng-submit="submitTag()">
-			<input type="text" placeholder="Try a Hashtag" ng-model="inputHashtag"></input>
-			<button type="submit" class="slideshow-btn">Run Slideshow</button>
-		</form>
 	</div>
 </div>
 
