@@ -14,6 +14,8 @@ app.use('/css', express.static(__dirname + '/css'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/views', express.static(__dirname + '/views'));
 
-app.listen(8000, function() {
-	console.log('serving localhost 8000');
+app.set('port', process.env.PORT || 8000);
+
+app.listen(app.get('port'), function() {
+	console.log('Express server listening on port # ' + app.get('port'));
 });
