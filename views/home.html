@@ -1,11 +1,15 @@
 
 <div class="navbar">
-	<div class="nav-btn">ABOUT</div>
-	<div class="nav-btn">CONTACT</div>
-	<form action="/slideshow" class="hashtag-container" ng-submit="submitTag()">
-		<input type="text" class="hashtag-input" placeholder="Try a Hashtag" ng-model="inputHashtag"></input>
-		<button type="submit" class="slideshow-btn">Run Slideshow</button>
-	</form>
+	<div class="nav-container">
+		<div class="nav-btn">ABOUT</div>
+		<div class="nav-btn">CONTACT</div>
+		<div class="nav-text">HASHTAG:</div>
+		<form action="/slideshow" class="hashtag-container" ng-submit="submitTag()">
+			<input type="text" class="hashtag-input" ng-model="inputHashtag"></input>
+			<button type="submit" class="slideshow-btn">PLAY</button>
+			<button type="submit" class="slideshow-btn">FULLSCREEN</button>
+		</form>
+	</div>
 </div>
 <div class="app-header">
 	<img class="center fit" src="images/header-image.png" alt="header-image">
