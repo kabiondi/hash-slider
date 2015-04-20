@@ -1,14 +1,18 @@
 
 <div class="navbar">
 	<div class="nav-container">
-		<div class="nav-btn float-left">ABOUT</div>
+		<img class="hash-icon float-left" src="images/favicon.png">
 		<div class="nav-text">HASHTAG:</div>
+
 		<form action="/slideshow" class="hashtag-container" ng-submit="submitTag()">
 			<input type="text" class="hashtag-input" ng-model="inputHashtag"></input>
 			<button type="submit" class="slideshow-btn">PLAY</button>
 			<button type="submit" class="slideshow-btn">FULLSCREEN</button>
 		</form>
+
+		<div class="hamburger float-right"><span></span></div>
 		<a href="https://github.com/kabiondi/hash-slider" class="nav-btn float-right">FORK ON GITHUB</a>
+		<a href="#" class="nav-btn float-right">ABOUT</a>
 	</div>
 </div>
 <div class="app-header">
