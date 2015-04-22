@@ -61,7 +61,7 @@ html {
 	opacity: 0.5;
 }
 .hamburger.active {
-	background-color: green;
+	background-color: #999;
 }
 .hamburger span {
 	position: absolute;
@@ -89,6 +89,32 @@ html {
 }
 .hamburger span::after {
 	top: 10px;
+}
+#ham-menu {
+	position: relative;
+	text-align: right;
+	list-style-type: none;
+	background-color: #999;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	padding: 10px 10px 0px 10px;
+	float: right;
+	display: none;
+}
+#ham-menu.active {
+	display: block;
+}
+.ham-btn {
+	display: inline-block;
+	color: white;
+	position: relative;
+	text-decoration: none;
+	margin-bottom: 5px;
+	transition: color .4s ease-in-out;
+	-moz-transition: color .4s ease-in-out;
+	-webkit-transition: color .4s ease-in-out;
+}
+.ham-btn:hover {
+	color: #777;
 }
 .float-left {
 	float: left;
@@ -140,7 +166,7 @@ html {
 	border-color: #34baad;
 	color: #34baad;
 }
-.app-header {
+#app-header {
 	display: block;
 	margin-top: 15px;
 }
@@ -157,15 +183,21 @@ html {
  margin: auto;
 }
 .slide-container {
-	position: relative;
-	height: 640px;
-	width: 640px;
-	margin: auto;
+	width: 85%;
+	max-width: 640px;
+	text-align: center;
+	margin: 0 auto;
 }
 .cycle-slideshow {
 	position: absolute;
+	width: 85%;
+	max-width: 640px;
+	margin: 0 auto;
 }
-
+.cycle-slideshow img {
+	width: 100%;
+	height: auto;
+}
 html, body {
 	height: 100%;
 }
@@ -202,7 +234,7 @@ html, body {
 		padding-bottom: 33%;
 	}
 }
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 760px) {
 	.nav-btn {
 		display: none;
 	}
