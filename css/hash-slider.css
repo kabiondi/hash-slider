@@ -72,7 +72,9 @@ html {
 	height: 6px;
 	background: white;
 	border-radius: 3px;
-
+}
+.hamburger.active span {
+	background: none;
 }
 .hamburger span::before,
 .hamburger span::after {
@@ -87,8 +89,20 @@ html {
 .hamburger span::before {
 	top: -10px;
 }
+.hamburger.active span::before {
+	top: 0;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
 .hamburger span::after {
 	top: 10px;
+}
+.hamburger.active span::after {
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 #ham-menu {
 	position: relative;
@@ -189,7 +203,7 @@ html {
 	margin: 0 auto;
 }
 .cycle-slideshow {
-	position: absolute;
+	display: block;
 	width: 85%;
 	max-width: 640px;
 	margin: 0 auto;
@@ -219,7 +233,10 @@ html, body {
 	top: 1px;
 	bottom: 1px;
 }
-
+.footer {
+	display: block;
+	height: 20px;
+}
 
 
 @media only screen and (max-width: 440px) {
