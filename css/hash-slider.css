@@ -187,7 +187,7 @@ html {
 }
 #app-header {
 	display: block;
-	margin-top: 15px;
+	margin: 12px 0px 7px 0px;
 }
 * {
     padding: 0;
@@ -305,6 +305,12 @@ html, body {
 	}
 	.hashtag-container {
 		transform: translateY(-35%);
+	}
+	.slide-container {
+	width: 97%;
+	}
+.cycle-slideshow {
+	width: 97%;
 	}
 }
 
