@@ -11,6 +11,9 @@ var app = angular.
 				templateUrl: 'views/slideshow.html',
 				controller: 'slideCtrl'
 			})
+			.when('/about', {
+				templateUrl: 'views/about.html'
+			})
 			
 		$locationProvider.html5Mode(true);
 });
