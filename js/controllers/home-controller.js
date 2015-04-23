@@ -26,6 +26,17 @@
 		}
 		toggleHandler(hamToggle);
 
+		function clearSlides () {
+		  console.log('clearSlides runs');
+		  if ($(".cycle-slideshow").data("cycle.opts").slideCount) {
+		    while ($(".cycle-slideshow").data("cycle.opts").slideCount>0) {// slideCount changes on each pass
+		      $('.cycle-slideshow').cycle('remove', 0);
+		      slideshowStarted = false;
+		    }
+		  }
+		}
+		clearSlides();
+		
 	}]);
 
 })();
